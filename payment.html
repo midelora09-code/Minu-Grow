@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment | Minu Grow</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="payment.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- PAYMENT SECTION -->
+<section class="payment-page">
+  <div class="container">
+    <div class="payment-box">
+      <h2>Pay via QR Code</h2>
+      <p>Scan the QR code below using your preferred payment app</p>
+      
+      <div class="qr-container">
+        <img src="qr.png" alt="Payment QR Code">
+      </div>
+
+      <p class="note">⚠️ IMPORTANT: After payment, submit your Transaction ID to confirm your order.</p>
+
+      <form class="payment-form" id="paymentForm">
+        <label for="username">Username / Email:</label>
+        <input type="text" id="username" placeholder="Enter your username or email" required>
+
+        <label for="txn">Transaction ID:</label>
+        <input type="text" id="txn" placeholder="Enter Transaction ID" required>
+
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount" placeholder="Enter Amount Paid" required>
+
+        <button type="submit" class="submit-btn">Submit Payment</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Minu Grow | All Rights Reserved</p>
+  </div>
+</footer>
+
+<!-- JS -->
+<script src="payment.js"></script>
+
+</body>
+</html>

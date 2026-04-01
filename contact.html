@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Minu Grow</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">Minu<span>Grow</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#payment">Payment</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<section class="page-header">
+  <h1>Contact Us 📩</h1>
+  <p>We are here to help you anytime</p>
+</section>
+
+<!-- Contact Section -->
+<section>
+  <div class="hero-conten">
+    <!-- Form -->
+    <div class="hero-conten">
+      <h2>Send Message</h2>
+      <form onsubmit="sendEmail(event)">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Info -->
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p><i class="fas fa-map-marker-alt"></i> India, Kolkata</p>
+      <p><i class="fas fa-envelope"></i> midelora09@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +91 9091824475</p>
+
+ <div class="footer-social">
+   <h4>Follow Us</h4>
+   <div class="social-icons">
+     <a href="https://youtube.com/@minu_vfx?si=WfKgwjyCGTbuXULR" target="_blank">
+       <i class="fab fa-youtube"></i>
+     </a>
+     <a href="https://www.instagram.com/minu_vfx?igsh=MTFlenBham9qcDU2dQ==" target="_blank">
+       <i class="fab fa-instagram"></i>
+     </a>
+     <a href="https://t.me/minulab" target="_blank">
+       <i class="fab fa-telegram-plane"></i>
+     </a>
+   </div>
+ </div>
+
+      <a href="https://wa.me/919091824475" class="mmwhatsapp-btn">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 Minu Grow. All Rights Reserved.</p>
+</footer>
+
+<!-- Script -->
+<script>
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navLinks.classList.toggle("active");
+});
+
+function sendEmail(e){
+  e.preventDefault();
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  const subject = encodeURIComponent("New Contact Message from " + name);
+  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+
+  window.location.href = `mailto:midelora09@gmail.com?subject=${subject}&body=${body}`;
+}
+</script>
+
+</body>
+</html>

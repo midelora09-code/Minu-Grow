@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Services - Minu Grow</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">Minu<span>Grow</span></a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">Services</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+
+        <!-- HAMBURGER -->
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</header>
+
+<!-- HEADER -->
+<section class="page-header">
+    <div class="container">
+        <h1>LinkedIn Services 🚀</h1>
+        <p>Boost your LinkedIn profile, connections, and engagement instantly</p>
+    </div>
+</section>
+
+<!-- CATEGORY FILTER -->
+<section class="category-section">
+    <div class="container">
+        <h2>Select Category</h2>
+
+        <div class="category-buttons">
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="connections">Connections</button>
+            <button data-filter="followers">Followers</button>
+            <button data-filter="likes">Post Likes</button>
+            <button data-filter="comments">Comments</button>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-container">
+
+<!-- CONNECTIONS -->
+<div class="service-card" data-category="connections">
+    <h3>💥 LinkedIn Connections</h3>
+    <p>Real & Active Connections</p>
+
+    <select class="package">
+        <option value="">Select Package</option>
+        <option value="50 Connections - ₹49">50 Connections - ₹49</option>
+        <option value="100 Connections - ₹99">100 Connections - ₹99</option>
+        <option value="500 Connections - ₹349">500 Connections - ₹349</option>
+    </select>
+
+    <input type="text" class="user-input" placeholder="Enter LinkedIn Profile URL">
+
+    <button class="order-btn">Order Now</button>
+</div>
+
+<!-- FOLLOWERS -->
+<div class="service-card" data-category="followers">
+    <h3>💥 LinkedIn Followers</h3>
+    <p>Grow your followers quickly</p>
+
+    <select class="package">
+        <option value="">Select Package</option>
+        <option value="100 Followers - ₹79">100 Followers - ₹79</option>
+        <option value="500 Followers - ₹299">500 Followers - ₹299</option>
+        <option value="1000 Followers - ₹549">1000 Followers - ₹549</option>
+    </select>
+
+    <input type="text" class="user-input" placeholder="Enter LinkedIn Profile URL">
+
+    <button class="order-btn">Order Now</button>
+</div>
+
+<!-- POST LIKES -->
+<div class="service-card" data-category="likes">
+    <h3>💥 LinkedIn Post Likes</h3>
+    <p>Boost your post engagement</p>
+
+    <select class="package">
+        <option value="">Select Package</option>
+        <option value="50 Likes - ₹29">50 Likes - ₹29</option>
+        <option value="100 Likes - ₹49">100 Likes - ₹49</option>
+        <option value="500 Likes - ₹199">500 Likes - ₹199</option>
+    </select>
+
+    <input type="text" class="user-input" placeholder="Enter Post URL">
+
+    <button class="order-btn">Order Now</button>
+</div>
+
+<!-- COMMENTS -->
+<div class="service-card" data-category="comments">
+    <h3>💥 LinkedIn Comments</h3>
+    <p>Real & Custom Comments</p>
+
+    <select class="package">
+        <option value="">Select Package</option>
+        <option value="10 Comments - ₹19">10 Comments - ₹19</option>
+        <option value="50 Comments - ₹79">50 Comments - ₹79</option>
+    </select>
+
+    <input type="text" class="user-input" placeholder="Enter Post URL">
+
+    <button class="order-btn">Order Now</button>
+</div>
+
+</section>
+
+<!-- PAYMENT SECTION -->
+<section class="payment" id="payment">
+    <div class="container">
+        <div class="payment-box">
+            <h2>Easy Payment via QR Code</h2>
+            <div class="qr-container">
+                <img src="qr.png" alt="Payment QR">
+            </div>
+            <p class="note">IMPORTANT: After payment, submit your Transaction ID in the dashboard.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Minu Grow | All Rights Reserved</p>
+    </div>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Services - Minu Grow</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">Minu<span>Grow</span></a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">Services</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+
+        <!-- HAMBURGER -->
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</header>
+
+<!-- HEADER -->
+<section class="page-header">
+    <div class="container">
+        <h1>Spotify Services 🎵</h1>
+        <p>Boost your Spotify plays, followers, and streams instantly</p>
+    </div>
+</section>
+
+<!-- CATEGORY FILTER -->
+<section class="category-section">
+    <div class="container">
+        <h2>Select Category</h2>
+
+        <div class="category-buttons">
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="followers">Followers</button>
+            <button data-filter="plays">Plays</button>
+            <button data-filter="likes">Likes</button>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-container">
+
+<!-- FOLLOWERS -->
+<div class="service-card" data-category="followers">
+    <h3>💥 Spotify Followers</h3>
+    <p>Real Active Followers</p>
+
+    <select class="package">
+        <option value="">Select Package</option>
+        <option value="100 Followers - ₹99">100 Followers - ₹99</option>
+        <option value="500 Followers - ₹399">500 Followers - ₹399</option>
+        <option value="1000 Followers - ₹699">1000 Followers - ₹699</option>
+    </select>
+
+    <input type="text" class="user-input" placeholder="Enter Spotify Profile URL">
+
+    <button class="order-btn">Order Now</button>
+</div>
+
+<!-- PLAYS -->
+<div class="service-card" data-category="plays">
+    <h3>💥 Spotify Plays / Streams</h3>
+    <p>Increase your song plays instantly</p>
+
+    <select class="package">
+        <option value="">Select Package</option>
+        <option value="1000 Plays - ₹49">1000 Plays - ₹49</option>
+        <option value="5000 Plays - ₹199">5000 Plays - ₹199</option>
+        <option value="10000 Plays - ₹349">10000 Plays - ₹349</option>
+    </select>
+
+    <input type="text" class="user-input" placeholder="Enter Song URL">
+
+    <button class="order-btn">Order Now</button>
+</div>
+
+<!-- LIKES -->
+<div class="service-card" data-category="likes">
+    <h3>💥 Spotify Likes</h3>
+    <p>Boost your playlist & song likes</p>
+
+    <select class="package">
+        <option value="">Select Package</option>
+        <option value="100 Likes - ₹29">100 Likes - ₹29</option>
+        <option value="500 Likes - ₹129">500 Likes - ₹129</option>
+    </select>
+
+    <input type="text" class="user-input" placeholder="Enter Playlist / Song URL">
+
+    <button class="order-btn">Order Now</button>
+</div>
+
+</section>
+
+<!-- PAYMENT SECTION -->
+<section class="payment" id="payment">
+    <div class="container">
+        <div class="payment-box">
+            <h2>Easy Payment via QR Code</h2>
+            <div class="qr-container">
+                <img src="qr.png" alt="Payment QR">
+            </div>
+            <p class="note">IMPORTANT: After payment, submit your Transaction ID in the dashboard.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Minu Grow | All Rights Reserved</p>
+    </div>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

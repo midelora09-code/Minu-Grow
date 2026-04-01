@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Minu Grow</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="container nav-container">
+        <a href="index.html" class="logo">Minu<span>Grow</span></a>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="index.html#payment">Payment</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+        </ul>
+
+        <!-- Hamburger (Mobile Menu) -->
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Header -->
+<section class="page-header">
+    <h1>About Minu Grow 🚀</h1>
+    <p>Your trusted partner for social media growth</p>
+</section>
+
+<!-- About Content -->
+<section>
+    <div class="container">
+
+        <h2 class="section-title">Who We Are</h2>
+        <p class="section-subtitle">
+            Minu Grow is a premium SMM panel designed to help individuals, influencers, and businesses grow their social presence quickly and affordably.
+        </p>
+
+        <div class="grid-3">
+
+            <div class="service-card">
+                <div class="feat-icon"><i class="fas fa-bolt"></i></div>
+                <h3>Fast Delivery</h3>
+                <p>We provide instant and super-fast delivery on all services to help you grow quickly.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="feat-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Secure System</h3>
+                <p>Your data and payments are completely secure with our trusted system.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="feat-icon"><i class="fas fa-wallet"></i></div>
+                <h3>Affordable Prices</h3>
+                <p>Get the best quality services at the lowest prices in the market.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Mission Section -->
+<section class="stats">
+    <div class="container">
+        <h2 class="section-title">Our Mission</h2>
+        <p class="section-subtitle">
+            Our mission is to make social media growth easy, fast, and accessible for everyone.
+            Whether you're a beginner or a professional, Minu Grow helps you reach your goals.
+        </p>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section>
+    <div class="container" style="text-align:center;">
+        <h2 class="section-title">Start Growing Today 🚀</h2>
+        <p class="section-subtitle">
+            Join thousands of users who trust Minu Grow for their social media success.
+        </p>
+
+        <a href="service.html" class="btn-primary">Get Started</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+
+            <div class="footer-about">
+                <a href="index.html" class="logo">Minu<span>Grow</span></a>
+                <p>The leading SMM Panel for quick Grow.</p>
+                <p><i class="fas fa-map-marker-alt"></i> India, Kolkata</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://youtube.com/@minu_vfx?si=WfKgwjyCGTbuXULR"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/minu_vfx?igsh=MTFlenBham9qcDU2dQ=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/minulab"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+        <p class="copyright">© 2026 Minu Grow. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Mobile Script -->
+<script>
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Services - Minu Grow</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">Minu<span>Grow</span></a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">Services</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+
+        <div class="nav-btns desktop-only">
+            <a href="#" class="btn-login">Login</a>
+            <a href="#" class="btn-signup">Sign Up</a>
+        </div>
+
+        <!-- HAMBURGER -->
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</header>
+
+<!-- HEADER -->
+<section class="page-header">
+    <div class="container">
+        <h1>Twitter Services 🚀</h1>
+        <p>Boost your Twitter followers, retweets & likes instantly with premium services</p>
+    </div>
+</section>
+
+<!-- CATEGORY FILTER -->
+<section class="category-section">
+    <div class="container">
+        <h2>Select Category</h2>
+
+        <div class="category-buttons">
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="followers">Followers</button>
+            <button data-filter="retweets">Retweets</button>
+            <button data-filter="likes">Likes</button>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-container">
+
+<!-- FOLLOWERS -->
+<div class="service-card" data-category="followers">
+    <h3>💥 Twitter Followers</h3>
+    <p>Real & Active Followers</p>
+
+    <select class="package">
+        <option value="">Select Package</option>
+        <option value="100 Followers - ₹49">100 Followers - ₹49</option>
+        <option value="500 Followers - ₹149">500 Followers - ₹149</option>
+        <option value="1000 Followers - ₹249">1000 Followers - ₹249</option>
+        <option value="5000 Followers - ₹849">5000 Followers - ₹849</option>
+    </select>
+
+    <input type="text" class="user-input" placeholder="Enter Twitter Username">
+
+    <button class="order-btn">Order Now</button>
+</div>
+
+<!-- RETWEETS -->
+<div class="service-card" data-category="retweets">
+    <h3>💥 Twitter Retweets</h3>
+    <p>Boost Post Engagement with Retweets</p>
+
+    <select class="package">
+        <option value="">Select Package</option>
+        <option value="100 Retweets - ₹29">100 Retweets - ₹29</option>
+        <option value="500 Retweets - ₹99">500 Retweets - ₹99</option>
+        <option value="1000 Retweets - ₹179">1000 Retweets - ₹179</option>
+    </select>
+
+    <input type="text" class="user-input" placeholder="Enter Tweet Link">
+
+    <button class="order-btn">Order Now</button>
+</div>
+
+<!-- LIKES -->
+<div class="service-card" data-category="likes">
+    <h3>💥 Twitter Likes</h3>
+    <p>Increase Tweet Likes Fast</p>
+
+    <select class="package">
+        <option value="">Select Package</option>
+        <option value="100 Likes - ₹19">100 Likes - ₹19</option>
+        <option value="500 Likes - ₹69">500 Likes - ₹69</option>
+        <option value="1000 Likes - ₹129">1000 Likes - ₹129</option>
+    </select>
+
+    <input type="text" class="user-input" placeholder="Enter Tweet Link">
+
+    <button class="order-btn">Order Now</button>
+</div>
+
+</section>
+
+<!-- PAYMENT SECTION -->
+<section class="payment" id="payment">
+    <div class="container">
+        <div class="payment-box">
+            <h2>Easy Payment via QR Code</h2>
+            <div class="qr-container">
+                <img src="qr.png" alt="Payment QR">
+            </div>
+            <p class="note">IMPORTANT: After payment, submit your Transaction ID in the dashboard.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Minu Grow | All Rights Reserved</p>
+    </div>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

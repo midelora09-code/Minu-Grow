@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Services - Minu Grow</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">Minu<span>Grow</span></a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">Services</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</header>
+
+<!-- HEADER -->
+<section class="page-header">
+    <div class="container">
+        <h1>YouTube Services 🚀</h1>
+        <p>Boost your YouTube growth instantly</p>
+    </div>
+</section>
+
+<!-- CATEGORY FILTER -->
+<section class="category-section">
+    <div class="container">
+        <h2>Select Category</h2>
+
+        <div class="category-buttons">
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="subs">Subscribers</button>
+            <button data-filter="views">Views</button>
+            <button data-filter="likes">Likes</button>
+            <button data-filter="comments">Comments</button>
+            <button data-filter="watchtime">Watch Time</button>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-container">
+
+<!-- SUBSCRIBERS -->
+<div class="service-card" data-category="subs">
+    <h3>💥 YouTube Subscribers</h3>
+    <p>Grow your channel fast</p>
+
+    <select class="package">
+        <option value="">Select Package</option>
+        <option>100 Subscribers - ₹249</option>
+        <option>500 Subscribers - ₹1199</option>
+        <option>1000 Subscribers - ₹2399</option>
+        <option>5000 Subscribers - ₹12999</option>
+    </select>
+
+    <input type="text" class="user-input" placeholder="Enter Channel Link">
+
+    <button class="order-btn">Order Now</button>
+</div>
+
+<!-- VIEWS -->
+<div class="service-card" data-category="views">
+    <h3>💥 YouTube Views</h3>
+    <p>Increase video reach</p>
+
+    <select class="package">
+        <option value="">Select Package</option>
+        <option>1000 Views - ₹139</option>
+        <option>5000 Views - ₹699</option>
+        <option>10000 Views - ₹1299</option>
+        <option>50000 Views - ₹6299</option>
+    </select>
+
+    <input type="text" class="user-input" placeholder="Enter Video Link">
+
+    <button class="order-btn">Order Now</button>
+</div>
+
+<!-- LIKES -->
+<div class="service-card" data-category="likes">
+    <h3>💥 YouTube Likes</h3>
+    <p>Boost engagement</p>
+
+    <select class="package">
+        <option value="">Select Package</option>
+        <option>100 Likes - ₹10</option>
+        <option>1000 Likes - ₹79</option>
+        <option>5000 Likes - ₹349</option>
+    </select>
+
+    <input type="text" class="user-input" placeholder="Enter Video Link">
+
+    <button class="order-btn">Order Now</button>
+</div>
+
+<!-- COMMENTS -->
+<div class="service-card" data-category="comments">
+    <h3>💥 YouTube Comments</h3>
+    <p>Real engagement</p>
+
+    <select class="package">
+        <option value="">Select Package</option>
+        <option>100 Comments - ₹9</option>
+        <option>500 Comments - ₹39</option>
+    </select>
+
+    <input type="text" class="user-input" placeholder="Enter Video Link">
+
+    <button class="order-btn">Order Now</button>
+</div>
+
+<!-- WATCH TIME -->
+<div class="service-card" data-category="watchtime">
+    <h3>💥 Watch Time Hours</h3>
+    <p>Complete monetization faster</p>
+
+    <select class="package">
+        <option value="">Select Package</option>
+        <option>100 Hours - ₹199</option>
+        <option>500 Hours - ₹999</option>
+        <option>1000 Hours - ₹1999</option>
+        <option>2000 Hours - ₹3799</option>
+        <option>4000 Hours - ₹7499</option>
+    </select>
+
+    <input type="text" class="user-input" placeholder="Enter Channel Link">
+
+    <button class="order-btn">Order Now</button>
+</div>
+
+</section>
+
+<!-- PAYMENT -->
+<section class="payment" id="payment">
+    <div class="container">
+        <div class="payment-box">
+            <h2>Easy Payment via QR Code</h2>
+            <div class="qr-container">
+                <img src="qr.png" alt="Payment QR">
+            </div>
+            <p class="note">IMPORTANT: After payment, submit your Transaction ID.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Minu Grow | All Rights Reserved</p>
+    </div>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>

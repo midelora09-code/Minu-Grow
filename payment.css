@@ -1,0 +1,197 @@
+/* --- Root Variables & Reset --- */
+:root {
+    --bg-color: #e6fef1;
+    --card-bg: rgba(255, 255, 255, 0.15); /* glass effect */
+    --blur-bg: rgba(255, 255, 255, 0.05);
+    --primary-green: #22c55e;
+    --primary-dark: #16a34a;
+    --text-color: #064e3b;
+    --input-bg: rgba(255, 255, 255, 0.2);
+    --input-border: #22c55e;
+    --note-red: #ef4444;
+    --neon-glow: rgba(34, 197, 94, 0.7);
+    --gradient-btn: linear-gradient(135deg, #22c55e, #16a34a, #4ade80);
+    --gradient-header: linear-gradient(90deg, #22c55e, #16a34a, #4ade80);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #d1f7e0 0%, #b7f0d1 100%);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+/* --- Payment Section --- */
+.payment-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding: 40px 20px;
+    backdrop-filter: blur(4px);
+    animation: fadeIn 1s ease forwards;
+}
+
+.payment-box {
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 45px 35px;
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(34, 197, 94, 0.25), 0 0 20px var(--neon-glow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: float 5s ease-in-out infinite;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.payment-box:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(34, 197, 94, 0.35), 0 0 30px var(--neon-glow);
+}
+
+.payment-box h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    background: var(--gradient-header);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    text-shadow: 0 0 12px var(--primary-green);
+}
+
+.payment-box p {
+    font-size: 15px;
+    margin-bottom: 25px;
+    opacity: 0.85;
+}
+
+/* --- QR Code --- */
+.qr-container {
+    background: var(--blur-bg);
+    padding: 28px;
+    border-radius: 18px;
+    margin-bottom: 30px;
+    display: inline-block;
+    box-shadow: 0 0 25px var(--neon-glow), 0 8px 25px rgba(34, 197, 94, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.qr-container:hover {
+    transform: scale(1.12) rotate(1deg);
+    box-shadow: 0 0 40px var(--neon-glow), 0 12px 40px rgba(34, 197, 94, 0.35);
+}
+
+.qr-container img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid var(--primary-green);
+    box-shadow: 0 0 20px var(--neon-glow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* --- Note --- */
+.note {
+    font-size: 13px;
+    color: var(--note-red);
+    margin-bottom: 25px;
+    font-weight: 500;
+    text-shadow: 0 0 4px rgba(239, 68, 68, 0.5);
+}
+
+/* --- Form --- */
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: left;
+}
+
+.payment-form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.payment-form input {
+    padding: 14px 16px;
+    border: 2px solid var(--input-border);
+    border-radius: 12px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    outline: none;
+    transition: 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.payment-form input:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 16px var(--neon-glow);
+    transform: scale(1.02);
+}
+
+/* --- Submit Button --- */
+.submit-btn {
+    padding: 16px 0;
+    background: var(--gradient-btn);
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s, box-shadow 0.3s, transform 0.2s;
+    box-shadow: 0 0 16px var(--neon-glow), 0 4px 12px rgba(34, 197, 94, 0.35);
+}
+
+.submit-btn:hover {
+    background: var(--primary-dark);
+    box-shadow: 0 0 28px var(--neon-glow), 0 8px 20px rgba(34, 197, 94, 0.4);
+    transform: scale(1.05) translateY(-2px);
+}
+
+/* --- Footer --- */
+.footer {
+    background: linear-gradient(90deg, #16a34a, #22c55e);
+    padding: 22px 0;
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+/* --- Animations --- */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(25px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Responsive --- */
+@media (max-width: 500px) {
+    .payment-box {
+        padding: 35px 25px;
+    }
+
+    .qr-container img {
+        width: 220px;
+        height: 220px;
+    }
+}

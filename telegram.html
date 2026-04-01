@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Services - Minu Grow</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">Minu<span>Grow</span></a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">Services</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+
+        <div class="nav-btns desktop-only">
+            <a href="#" class="btn-login">Login</a>
+            <a href="#" class="btn-signup">Sign Up</a>
+        </div>
+
+        <!-- HAMBURGER -->
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</header>
+
+<!-- HEADER -->
+<section class="page-header">
+    <div class="container">
+        <h1>Telegram Services 🚀</h1>
+        <p>Boost your Telegram channels & groups instantly with premium services</p>
+    </div>
+</section>
+
+<!-- CATEGORY FILTER -->
+<section class="category-section">
+    <div class="container">
+        <h2>Select Category</h2>
+
+        <div class="category-buttons">
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="members">Members</button>
+            <button data-filter="views">Views</button>
+            <button data-filter="shares">Shares</button>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-container">
+
+<!-- MEMBERS -->
+<div class="service-card" data-category="members">
+    <h3>💥 Telegram Members</h3>
+    <p>Real & Active Members for your Channel/Group</p>
+
+    <select class="package">
+        <option value="">Select Package</option>
+        <option value="100 Members - ₹49">100 Members - ₹49</option>
+        <option value="500 Members - ₹149">500 Members - ₹149</option>
+        <option value="1000 Members - ₹249">1000 Members - ₹249</option>
+        <option value="5000 Members - ₹849">5000 Members - ₹849</option>
+    </select>
+
+    <input type="text" class="user-input" placeholder="Enter Channel/Group Link">
+
+    <button class="order-btn">Order Now</button>
+</div>
+
+<!-- VIEWS -->
+<div class="service-card" data-category="views">
+    <h3>💥 Telegram Views</h3>
+    <p>Increase Post Views Fast</p>
+
+    <select class="package">
+        <option value="">Select Package</option>
+        <option value="100 Views - ₹9">100 Views - ₹9</option>
+        <option value="500 Views - ₹39">500 Views - ₹39</option>
+        <option value="1000 Views - ₹69">1000 Views - ₹69</option>
+        <option value="5000 Views - ₹249">5000 Views - ₹249</option>
+    </select>
+
+    <input type="text" class="user-input" placeholder="Enter Post Link">
+
+    <button class="order-btn">Order Now</button>
+</div>
+
+<!-- SHARES -->
+<div class="service-card" data-category="shares">
+    <h3>💥 Telegram Shares</h3>
+    <p>Boost Post Reach with Shares</p>
+
+    <select class="package">
+        <option value="">Select Package</option>
+        <option value="100 Shares - ₹9">100 Shares - ₹9</option>
+        <option value="500 Shares - ₹39">500 Shares - ₹39</option>
+        <option value="1000 Shares - ₹69">1000 Shares - ₹69</option>
+    </select>
+
+    <input type="text" class="user-input" placeholder="Enter Post Link">
+
+    <button class="order-btn">Order Now</button>
+</div>
+
+</section>
+
+<!-- PAYMENT SECTION -->
+<section class="payment" id="payment">
+    <div class="container">
+        <div class="payment-box">
+            <h2>Easy Payment via QR Code</h2>
+            <div class="qr-container">
+                <img src="qr.png" alt="Payment QR">
+            </div>
+            <p class="note">IMPORTANT: After payment, submit your Transaction ID in the dashboard.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Minu Grow | All Rights Reserved</p>
+    </div>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
